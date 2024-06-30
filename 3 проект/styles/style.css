@@ -1,0 +1,493 @@
+/* start styles */
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #F1F1F1;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+a {
+  outline: none;
+  text-decoration: none;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+h1 {
+  text-align: center;
+}
+
+/* /start style */
+
+/* fonts */
+
+/* kanit-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Kanit';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/kanit-v15-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* kanit-500 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Kanit';
+  font-style: normal;
+  font-weight: 500;
+  src: url('../fonts/kanit-v15-latin-500.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* kanit-600 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Kanit';
+  font-style: normal;
+  font-weight: 600;
+  src: url('../fonts/kanit-v15-latin-600.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* kanit-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Kanit';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/kanit-v15-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+
+/* inter-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/inter-v13-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* inter-500 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  src: url('../fonts/inter-v13-latin-500.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* inter-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/inter-v13-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* /fonts */
+
+/* header */
+
+header {
+  display: flex;
+  padding: 24px 160px;
+  align-items: center;
+  gap: 752px;
+}
+
+.header-logo {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.header-logo p {
+  color: #000;
+  font-feature-settings: 'clig' off, 'liga' off;
+  font-family: Kanit;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 22px; /* 122.222% */
+  text-transform: lowercase;
+  width: 1120px;
+}
+
+/* /header */
+
+/* hello world */
+
+.hello-world {
+  display: flex;
+  padding: 64px 160px;
+  align-items: center;
+  gap: 752px;
+}
+
+.hello-world-logo {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.hello-world-logo p {
+  color: #000;
+  font-feature-settings: 'clig' off, 'liga' off;
+  font-family: Kanit;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120px; /* 250% */
+  width: 1120px;
+}
+
+/* /hello world */
+
+/* news style */
+
+.news-list {
+  display: flex;
+  padding: 0px 160px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 45px;
+}
+
+.news-list-news {
+  display: flex;
+  padding-bottom: 36px;
+  align-items: flex-start;
+  gap: 100px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.20);
+  background: #F1F1F1;
+}
+
+.news-left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 70px;
+}
+
+.news-left-top {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 48px;
+}
+
+.news-left-top-top {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.author-image {
+  width: 24px !important;
+  height: 24px !important;
+  border-radius: 24px !important;
+  background: lightgray -29.25px -12px / 343.75% 229.167% no-repeat !important;
+  overflow: hidden;
+}
+
+.author-image img {
+  width: 24px;
+}
+
+.news-left-top-top p:nth-child(2) {
+  color: #000;
+  font-feature-settings: 'clig' off, 'liga' off;
+  
+  /* Body S 14 pt/Medium */
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 18px; /* 128.571% */
+}
+
+.news-left-top-top p:nth-child(3) {
+  color: #000;
+  font-feature-settings: 'clig' off, 'liga' off;
+  
+  /* Body S 14 pt/Medium */
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 18px; /* 128.571% */
+  opacity: 0.5;
+}
+
+.news-left-top-top p:nth-child(4) {
+  color: #000;
+  font-feature-settings: 'clig' off, 'liga' off;
+  
+  /* Body S 14 pt/Medium */
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 18px; /* 128.571% */
+}
+
+.news-left-top-top p:nth-child(5) {
+  color: #000;
+  text-align: center;
+  font-feature-settings: 'clig' off, 'liga' off;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 18px; /* 128.571% */
+  width: 12px;
+}
+
+.news-left-top-top p:nth-child(6) {
+  color: #000;
+  font-feature-settings: 'clig' off, 'liga' off;
+  
+  /* Body S 14 pt/Medium */
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 18px; /* 128.571% */
+  opacity: 0.5;
+}
+
+.news-left-top-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+}
+
+.news-left-top-text p:nth-child(1) {
+  color: #000;
+  font-feature-settings: 'clig' off, 'liga' off;
+  
+  /* Headline L 28 pt/Bold */
+  font-family: Inter;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 34px; /* 121.429% */
+  width: 693px;
+  transition: 0.3s;
+}
+
+.news-left-top-text p:nth-child(2) {
+  color: #000;
+
+  /* Body M 16 pt/Regular */
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px; /* 137.5% */
+  width: 693px;
+}
+
+.news-left-infobottom {
+  display: flex;
+  align-items: flex-end;
+  gap: 325px;
+}
+
+.infobottom-info {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.infobottom-info-buttom {
+  display: flex;
+  padding: 6px 16px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border-radius: 100px;
+  background: linear-gradient(0deg, rgba(8, 30, 52, 0.12) 0%, rgba(8, 30, 52, 0.12) 100%), #FFFBFE;
+}
+
+.infobottom-info-buttom p {
+  color: #081E34;
+  text-align: center;
+  font-feature-settings: 'clig' off, 'liga' off;
+  
+  /* Body S 14 pt/Medium */
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 18px; /* 128.571% */
+  margin: 0;
+}
+
+.infobottom-info p:nth-child(2) {
+  color: #000;
+  font-feature-settings: 'clig' off, 'liga' off;
+  
+  /* Body S 14 pt/Medium */
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 18px; /* 128.571% */
+  opacity: 0.5;
+}
+
+.infobottom-info p:nth-child(3) {
+  color: #000;
+  text-align: center;
+  font-feature-settings: 'clig' off, 'liga' off;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 18px; /* 128.571% */
+  width: 12px;
+}
+
+.infobottom-info p:nth-child(4) {
+  color: #000;
+  font-feature-settings: 'clig' off, 'liga' off;
+  
+  /* Body S 14 pt/Medium */
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 18px; /* 128.571% */
+  opacity: 0.5;
+}
+
+.news-img {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 265px;
+  height: 265px;
+  border-radius: 4px;
+  background: lightgray 50% / cover no-repeat;
+  overflow: hidden;
+}
+
+.news-img img {
+  height: 100%;
+}
+
+.cubs {
+  display: flex; 
+  align-items: flex-start; 
+  gap: 14px;
+}
+
+.cube {
+  width: 24px;
+  height: 24px;
+  background: #E1E0E6;
+}
+
+/* /news style */
+
+/* footer */
+
+footer {
+  display: flex;
+  width: 1120px;
+  padding: 778px 160px 32px 160px;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.footerframe {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  gap: 105px;
+}
+
+.footer-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+
+.footer-menu-button-top {
+  display: flex;
+  padding: 10px 12px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border-radius: 100px;
+}
+
+.footer-menu-button-top p {
+  color: #081E34;
+  text-align: center;
+  font-feature-settings: 'clig' off, 'liga' off;
+  
+  /* Body S 14 pt/Medium */
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 18px; /* 128.571% */
+  opacity: 0.5;
+}
+
+.footer-menu-button-top p a {
+  color: #081E34;
+  text-decoration: underline;
+}
+
+.footer-menu-button-top p a:hover {
+  color: #1d3c5a;
+}
+
+.footer-menu-bot {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.footer-menu-bot-button {
+  display: flex;
+  padding: 10px 12px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border-radius: 100px;
+}
+
+.footer-menu-bot-button {
+  color: #081E34;
+  text-align: center;
+  font-feature-settings: 'clig' off, 'liga' off;
+  
+  /* Body S 14 pt/Medium */
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 18px; /* 128.571% */
+}
+
+/* /footer */
+
+
+/* animations */
+
+.news-left-top-text p:nth-child(1):hover {
+  opacity: 0.6;
+}
+
+/* /animations */
